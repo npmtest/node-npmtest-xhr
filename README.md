@@ -1,7 +1,10 @@
-# test coverage for  [xhr (v2.4.0)](https://github.com/naugtur/xhr)  [![npm package](https://img.shields.io/npm/v/npmtest-xhr.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-xhr) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-xhr.svg)](https://travis-ci.org/npmtest/node-npmtest-xhr)
+# npmtest-xhr
+
+#### test coverage for  [xhr (v2.4.0)](https://github.com/naugtur/xhr)  [![npm package](https://img.shields.io/npm/v/npmtest-xhr.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-xhr) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-xhr.svg)](https://travis-ci.org/npmtest/node-npmtest-xhr)
+
 #### small xhr abstraction
 
-[![NPM](https://nodei.co/npm/xhr.png?downloads=true)](https://www.npmjs.com/package/xhr)
+[![NPM](https://nodei.co/npm/xhr.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/xhr)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-xhr/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-xhr/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-xhr/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-xhr/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-xhr/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-xhr/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-xhr/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-xhr/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-xhr/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-xhr/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-xhr%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-xhr/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-xhr/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-xhr/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-xhr/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-xhr%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-xhr/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-xhr/build/test-report.html](https://npmtest.github.io/node-npmtest-xhr/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-xhr/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-xhr/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-xhr/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-xhr/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-xhr/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-xhr/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-xhr/build/screenCapture.npmPackageListing.svg)
 
@@ -27,20 +36,17 @@
 
 {
     "author": {
-        "name": "Raynos",
-        "email": "raynos2@gmail.com"
+        "name": "Raynos"
     },
     "bugs": {
-        "url": "https://github.com/naugtur/xhr/issues",
-        "email": "naugtur@gmail.com"
+        "url": "https://github.com/naugtur/xhr/issues"
     },
     "contributors": [
         {
             "name": "Jake Verbaten"
         },
         {
-            "name": "Zbyszek Tenerowicz",
-            "email": "naugtur@gmail.com"
+            "name": "Zbyszek Tenerowicz"
         }
     ],
     "dependencies": {
@@ -75,17 +81,14 @@
     "main": "index",
     "maintainers": [
         {
-            "name": "raynos",
-            "email": "raynos2@gmail.com"
+            "name": "raynos"
         },
         {
-            "name": "naugtur",
-            "email": "naugtur@gmail.com"
+            "name": "naugtur"
         }
     ],
     "name": "xhr",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/naugtur/xhr.git"
