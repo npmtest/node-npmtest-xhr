@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-xhr/xhr/index.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-xhr/node_modules/xhr/index.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-xhr">npmtest-xhr (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-xhr/xhr/index.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-xhr/node_modules/xhr/index.js</span></h1>
     <h2>
         
         Statements: <span class="metric">16.42% <small>(22 / 134)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-xhr/xhr/</a> &#187; index.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-xhr/node_modules/xhr/</a> » index.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -706,13 +704,13 @@ var xtend = require("xtend")
 &nbsp;
 module.exports = createXHR
 createXHR.XMLHttpRequest = window.XMLHttpRequest || noop
-createXHR.XDomainRequest = "withCredentials" in (new createXHR.XMLHttpRequest()) ? <span class="branch-0 cbranch-no" title="branch not covered" >createXHR.XMLHttpRequest </span>: window.XDomainRequest
+createXHR.XDomainRequest = "withCredentials" in (new createXHR.XMLHttpRequest()) ? <span class="branch-0 cbranch-no" title="branch not covered">createXHR.XMLHttpRequest </span>: window.XDomainRequest
 &nbsp;
 forEachArray(["get", "put", "post", "patch", "head", "delete"], function(method) {
-    createXHR[method === "delete" ? "del" : method] = <span class="fstat-no" title="function not covered" >function(uri, options, callback) {</span>
-<span class="cstat-no" title="statement not covered" >        options = initParams(uri, options, callback)</span>
-<span class="cstat-no" title="statement not covered" >        options.method = method.toUpperCase()</span>
-<span class="cstat-no" title="statement not covered" >        return _createXHR(options)</span>
+    createXHR[method === "delete" ? "del" : method] = <span class="fstat-no" title="function not covered">function(uri, options, callback) {</span>
+<span class="cstat-no" title="statement not covered">        options = initParams(uri, options, callback)</span>
+<span class="cstat-no" title="statement not covered">        options.method = method.toUpperCase()</span>
+<span class="cstat-no" title="statement not covered">        return _createXHR(options)</span>
     }
 })
 &nbsp;
@@ -722,97 +720,97 @@ function forEachArray(array, iterator) {
     }
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function isEmpty(obj){</span>
-<span class="cstat-no" title="statement not covered" >    for(var i in obj){</span>
-<span class="cstat-no" title="statement not covered" >        if(obj.hasOwnProperty(i)) <span class="cstat-no" title="statement not covered" >return false</span></span>
+<span class="fstat-no" title="function not covered">function isEmpty(obj){</span>
+<span class="cstat-no" title="statement not covered">    for(var i in obj){</span>
+<span class="cstat-no" title="statement not covered">        if(obj.hasOwnProperty(i)) <span class="cstat-no" title="statement not covered">return false</span></span>
     }
-<span class="cstat-no" title="statement not covered" >    return true</span>
+<span class="cstat-no" title="statement not covered">    return true</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function initParams(uri, options, callback) {</span>
-<span class="cstat-no" title="statement not covered" >    var params = uri</span>
+<span class="fstat-no" title="function not covered">function initParams(uri, options, callback) {</span>
+<span class="cstat-no" title="statement not covered">    var params = uri</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (isFunction(options)) {</span>
-<span class="cstat-no" title="statement not covered" >        callback = options</span>
-<span class="cstat-no" title="statement not covered" >        if (typeof uri === "string") {</span>
-<span class="cstat-no" title="statement not covered" >            params = {uri:uri}</span>
+<span class="cstat-no" title="statement not covered">    if (isFunction(options)) {</span>
+<span class="cstat-no" title="statement not covered">        callback = options</span>
+<span class="cstat-no" title="statement not covered">        if (typeof uri === "string") {</span>
+<span class="cstat-no" title="statement not covered">            params = {uri:uri}</span>
         }
     } else {
-<span class="cstat-no" title="statement not covered" >        params = xtend(options, {uri: uri})</span>
+<span class="cstat-no" title="statement not covered">        params = xtend(options, {uri: uri})</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    params.callback = callback</span>
-<span class="cstat-no" title="statement not covered" >    return params</span>
+<span class="cstat-no" title="statement not covered">    params.callback = callback</span>
+<span class="cstat-no" title="statement not covered">    return params</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function createXHR(uri, options, callback) {</span>
-<span class="cstat-no" title="statement not covered" >    options = initParams(uri, options, callback)</span>
-<span class="cstat-no" title="statement not covered" >    return _createXHR(options)</span>
+<span class="fstat-no" title="function not covered">function createXHR(uri, options, callback) {</span>
+<span class="cstat-no" title="statement not covered">    options = initParams(uri, options, callback)</span>
+<span class="cstat-no" title="statement not covered">    return _createXHR(options)</span>
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function _createXHR(options) {</span>
-<span class="cstat-no" title="statement not covered" >    if(typeof options.callback === "undefined"){</span>
-<span class="cstat-no" title="statement not covered" >        throw new Error("callback argument missing")</span>
+<span class="fstat-no" title="function not covered">function _createXHR(options) {</span>
+<span class="cstat-no" title="statement not covered">    if(typeof options.callback === "undefined"){</span>
+<span class="cstat-no" title="statement not covered">        throw new Error("callback argument missing")</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var called = false</span>
-<span class="cstat-no" title="statement not covered" >    var callback = <span class="fstat-no" title="function not covered" >function cbOnce(err, response, body){</span></span>
-<span class="cstat-no" title="statement not covered" >        if(!called){</span>
-<span class="cstat-no" title="statement not covered" >            called = true</span>
-<span class="cstat-no" title="statement not covered" >            options.callback(err, response, body)</span>
+<span class="cstat-no" title="statement not covered">    var called = false</span>
+<span class="cstat-no" title="statement not covered">    var callback = <span class="fstat-no" title="function not covered">function cbOnce(err, response, body){</span></span>
+<span class="cstat-no" title="statement not covered">        if(!called){</span>
+<span class="cstat-no" title="statement not covered">            called = true</span>
+<span class="cstat-no" title="statement not covered">            options.callback(err, response, body)</span>
         }
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    function readystatechange() {</span>
-<span class="cstat-no" title="statement not covered" >        if (xhr.readyState === 4) {</span>
-<span class="cstat-no" title="statement not covered" >            setTimeout(loadFunc, 0)</span>
+<span class="fstat-no" title="function not covered">    function readystatechange() {</span>
+<span class="cstat-no" title="statement not covered">        if (xhr.readyState === 4) {</span>
+<span class="cstat-no" title="statement not covered">            setTimeout(loadFunc, 0)</span>
         }
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    function getBody() {</span>
+<span class="fstat-no" title="function not covered">    function getBody() {</span>
         // Chrome with requestType=blob throws errors arround when even testing access to responseText
-<span class="cstat-no" title="statement not covered" >        var body = undefined</span>
+<span class="cstat-no" title="statement not covered">        var body = undefined</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (xhr.response) {</span>
-<span class="cstat-no" title="statement not covered" >            body = xhr.response</span>
+<span class="cstat-no" title="statement not covered">        if (xhr.response) {</span>
+<span class="cstat-no" title="statement not covered">            body = xhr.response</span>
         } else {
-<span class="cstat-no" title="statement not covered" >            body = xhr.responseText || getXml(xhr)</span>
+<span class="cstat-no" title="statement not covered">            body = xhr.responseText || getXml(xhr)</span>
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (isJson) {</span>
-<span class="cstat-no" title="statement not covered" >            try {</span>
-<span class="cstat-no" title="statement not covered" >                body = JSON.parse(body)</span>
+<span class="cstat-no" title="statement not covered">        if (isJson) {</span>
+<span class="cstat-no" title="statement not covered">            try {</span>
+<span class="cstat-no" title="statement not covered">                body = JSON.parse(body)</span>
             } catch (e) {}
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return body</span>
+<span class="cstat-no" title="statement not covered">        return body</span>
     }
 &nbsp;
-<span class="fstat-no" title="function not covered" >    function errorFunc(evt) {</span>
-<span class="cstat-no" title="statement not covered" >        clearTimeout(timeoutTimer)</span>
-<span class="cstat-no" title="statement not covered" >        if(!(evt instanceof Error)){</span>
-<span class="cstat-no" title="statement not covered" >            evt = new Error("" + (evt || "Unknown XMLHttpRequest Error") )</span>
+<span class="fstat-no" title="function not covered">    function errorFunc(evt) {</span>
+<span class="cstat-no" title="statement not covered">        clearTimeout(timeoutTimer)</span>
+<span class="cstat-no" title="statement not covered">        if(!(evt instanceof Error)){</span>
+<span class="cstat-no" title="statement not covered">            evt = new Error("" + (evt || "Unknown XMLHttpRequest Error") )</span>
         }
-<span class="cstat-no" title="statement not covered" >        evt.statusCode = 0</span>
-<span class="cstat-no" title="statement not covered" >        return callback(evt, failureResponse)</span>
+<span class="cstat-no" title="statement not covered">        evt.statusCode = 0</span>
+<span class="cstat-no" title="statement not covered">        return callback(evt, failureResponse)</span>
     }
 &nbsp;
     // will load the data &amp; process the response in a special response object
-<span class="fstat-no" title="function not covered" >    function loadFunc() {</span>
-<span class="cstat-no" title="statement not covered" >        if (aborted) <span class="cstat-no" title="statement not covered" >return</span></span>
-<span class="cstat-no" title="statement not covered" >        var status</span>
-<span class="cstat-no" title="statement not covered" >        clearTimeout(timeoutTimer)</span>
-<span class="cstat-no" title="statement not covered" >        if(options.useXDR &amp;&amp; xhr.status===undefined) {</span>
+<span class="fstat-no" title="function not covered">    function loadFunc() {</span>
+<span class="cstat-no" title="statement not covered">        if (aborted) <span class="cstat-no" title="statement not covered">return</span></span>
+<span class="cstat-no" title="statement not covered">        var status</span>
+<span class="cstat-no" title="statement not covered">        clearTimeout(timeoutTimer)</span>
+<span class="cstat-no" title="statement not covered">        if(options.useXDR &amp;&amp; xhr.status===undefined) {</span>
             //IE8 CORS GET successful response doesn't have a status field, but body is fine
-<span class="cstat-no" title="statement not covered" >            status = 200</span>
+<span class="cstat-no" title="statement not covered">            status = 200</span>
         } else {
-<span class="cstat-no" title="statement not covered" >            status = (xhr.status === 1223 ? 204 : xhr.status)</span>
+<span class="cstat-no" title="statement not covered">            status = (xhr.status === 1223 ? 204 : xhr.status)</span>
         }
-<span class="cstat-no" title="statement not covered" >        var response = failureResponse</span>
-<span class="cstat-no" title="statement not covered" >        var err = null</span>
+<span class="cstat-no" title="statement not covered">        var response = failureResponse</span>
+<span class="cstat-no" title="statement not covered">        var err = null</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        if (status !== 0){</span>
-<span class="cstat-no" title="statement not covered" >            response = {</span>
+<span class="cstat-no" title="statement not covered">        if (status !== 0){</span>
+<span class="cstat-no" title="statement not covered">            response = {</span>
                 body: getBody(),
                 statusCode: status,
                 method: method,
@@ -820,35 +818,35 @@ function forEachArray(array, iterator) {
                 url: uri,
                 rawRequest: xhr
             }
-<span class="cstat-no" title="statement not covered" >            if(xhr.getAllResponseHeaders){ //remember xhr can in fact be XDR for CORS in IE</span>
-<span class="cstat-no" title="statement not covered" >                response.headers = parseHeaders(xhr.getAllResponseHeaders())</span>
+<span class="cstat-no" title="statement not covered">            if(xhr.getAllResponseHeaders){ //remember xhr can in fact be XDR for CORS in IE</span>
+<span class="cstat-no" title="statement not covered">                response.headers = parseHeaders(xhr.getAllResponseHeaders())</span>
             }
         } else {
-<span class="cstat-no" title="statement not covered" >            err = new Error("Internal XMLHttpRequest Error")</span>
+<span class="cstat-no" title="statement not covered">            err = new Error("Internal XMLHttpRequest Error")</span>
         }
-<span class="cstat-no" title="statement not covered" >        return callback(err, response, response.body)</span>
+<span class="cstat-no" title="statement not covered">        return callback(err, response, response.body)</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var xhr = options.xhr || null</span>
+<span class="cstat-no" title="statement not covered">    var xhr = options.xhr || null</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (!xhr) {</span>
-<span class="cstat-no" title="statement not covered" >        if (options.cors || options.useXDR) {</span>
-<span class="cstat-no" title="statement not covered" >            xhr = new createXHR.XDomainRequest()</span>
+<span class="cstat-no" title="statement not covered">    if (!xhr) {</span>
+<span class="cstat-no" title="statement not covered">        if (options.cors || options.useXDR) {</span>
+<span class="cstat-no" title="statement not covered">            xhr = new createXHR.XDomainRequest()</span>
         }else{
-<span class="cstat-no" title="statement not covered" >            xhr = new createXHR.XMLHttpRequest()</span>
+<span class="cstat-no" title="statement not covered">            xhr = new createXHR.XMLHttpRequest()</span>
         }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    var key</span>
-<span class="cstat-no" title="statement not covered" >    var aborted</span>
-<span class="cstat-no" title="statement not covered" >    var uri = xhr.url = options.uri || options.url</span>
-<span class="cstat-no" title="statement not covered" >    var method = xhr.method = options.method || "GET"</span>
-<span class="cstat-no" title="statement not covered" >    var body = options.body || options.data</span>
-<span class="cstat-no" title="statement not covered" >    var headers = xhr.headers = options.headers || {}</span>
-<span class="cstat-no" title="statement not covered" >    var sync = !!options.sync</span>
-<span class="cstat-no" title="statement not covered" >    var isJson = false</span>
-<span class="cstat-no" title="statement not covered" >    var timeoutTimer</span>
-<span class="cstat-no" title="statement not covered" >    var failureResponse = {</span>
+<span class="cstat-no" title="statement not covered">    var key</span>
+<span class="cstat-no" title="statement not covered">    var aborted</span>
+<span class="cstat-no" title="statement not covered">    var uri = xhr.url = options.uri || options.url</span>
+<span class="cstat-no" title="statement not covered">    var method = xhr.method = options.method || "GET"</span>
+<span class="cstat-no" title="statement not covered">    var body = options.body || options.data</span>
+<span class="cstat-no" title="statement not covered">    var headers = xhr.headers = options.headers || {}</span>
+<span class="cstat-no" title="statement not covered">    var sync = !!options.sync</span>
+<span class="cstat-no" title="statement not covered">    var isJson = false</span>
+<span class="cstat-no" title="statement not covered">    var timeoutTimer</span>
+<span class="cstat-no" title="statement not covered">    var failureResponse = {</span>
         body: undefined,
         headers: {},
         statusCode: 0,
@@ -857,94 +855,95 @@ function forEachArray(array, iterator) {
         rawRequest: xhr
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if ("json" in options &amp;&amp; options.json !== false) {</span>
-<span class="cstat-no" title="statement not covered" >        isJson = true</span>
-<span class="cstat-no" title="statement not covered" >        headers["accept"] || headers["Accept"] || (headers["Accept"] = "application/json") </span>//Don't override existing accept header declared by user
-<span class="cstat-no" title="statement not covered" >        if (method !== "GET" &amp;&amp; method !== "HEAD") {</span>
-<span class="cstat-no" title="statement not covered" >            headers["content-type"] || headers["Content-Type"] || (headers["Content-Type"] = "application/json") </span>//Don't override existing accept header declared by user
-<span class="cstat-no" title="statement not covered" >            body = JSON.stringify(options.json === true ? body : options.json)</span>
+<span class="cstat-no" title="statement not covered">    if ("json" in options &amp;&amp; options.json !== false) {</span>
+<span class="cstat-no" title="statement not covered">        isJson = true</span>
+<span class="cstat-no" title="statement not covered">        headers["accept"] || headers["Accept"] || (headers["Accept"] = "application/json") </span>//Don't override existing accept header declared by user
+<span class="cstat-no" title="statement not covered">        if (method !== "GET" &amp;&amp; method !== "HEAD") {</span>
+<span class="cstat-no" title="statement not covered">            headers["content-type"] || headers["Content-Type"] || (headers["Content-Type"] = "application/json") </span>//Don't override existing accept header declared by user
+<span class="cstat-no" title="statement not covered">            body = JSON.stringify(options.json === true ? body : options.json)</span>
         }
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    xhr.onreadystatechange = readystatechange</span>
-<span class="cstat-no" title="statement not covered" >    xhr.onload = loadFunc</span>
-<span class="cstat-no" title="statement not covered" >    xhr.onerror = errorFunc</span>
+<span class="cstat-no" title="statement not covered">    xhr.onreadystatechange = readystatechange</span>
+<span class="cstat-no" title="statement not covered">    xhr.onload = loadFunc</span>
+<span class="cstat-no" title="statement not covered">    xhr.onerror = errorFunc</span>
     // IE9 must have onprogress be set to a unique function.
-<span class="cstat-no" title="statement not covered" >    xhr.onprogress = <span class="fstat-no" title="function not covered" >function () {</span></span>
+<span class="cstat-no" title="statement not covered">    xhr.onprogress = <span class="fstat-no" title="function not covered">function () {</span></span>
         // IE must die
     }
-<span class="cstat-no" title="statement not covered" >    xhr.onabort = <span class="fstat-no" title="function not covered" >function(){</span></span>
-<span class="cstat-no" title="statement not covered" >        aborted = true;</span>
+<span class="cstat-no" title="statement not covered">    xhr.onabort = <span class="fstat-no" title="function not covered">function(){</span></span>
+<span class="cstat-no" title="statement not covered">        aborted = true;</span>
     }
-<span class="cstat-no" title="statement not covered" >    xhr.ontimeout = errorFunc</span>
-<span class="cstat-no" title="statement not covered" >    xhr.open(method, uri, !sync, options.username, options.password)</span>
+<span class="cstat-no" title="statement not covered">    xhr.ontimeout = errorFunc</span>
+<span class="cstat-no" title="statement not covered">    xhr.open(method, uri, !sync, options.username, options.password)</span>
     //has to be after open
-<span class="cstat-no" title="statement not covered" >    if(!sync) {</span>
-<span class="cstat-no" title="statement not covered" >        xhr.withCredentials = !!options.withCredentials</span>
+<span class="cstat-no" title="statement not covered">    if(!sync) {</span>
+<span class="cstat-no" title="statement not covered">        xhr.withCredentials = !!options.withCredentials</span>
     }
     // Cannot set timeout with sync request
     // not setting timeout on the xhr object, because of old webkits etc. not handling that correctly
     // both npm's request and jquery 1.x use this kind of timeout, so this is being consistent
-<span class="cstat-no" title="statement not covered" >    if (!sync &amp;&amp; options.timeout &gt; 0 ) {</span>
-<span class="cstat-no" title="statement not covered" >        timeoutTimer = setTimeout(<span class="fstat-no" title="function not covered" >function(){</span></span>
-<span class="cstat-no" title="statement not covered" >            if (aborted) <span class="cstat-no" title="statement not covered" >return</span></span>
-<span class="cstat-no" title="statement not covered" >            aborted = true/</span>/IE9 may still call readystatechange
-<span class="cstat-no" title="statement not covered" >            xhr.abort("timeout")</span>
-<span class="cstat-no" title="statement not covered" >            var e = new Error("XMLHttpRequest timeout")</span>
-<span class="cstat-no" title="statement not covered" >            e.code = "ETIMEDOUT"</span>
-<span class="cstat-no" title="statement not covered" >            errorFunc(e)</span>
+<span class="cstat-no" title="statement not covered">    if (!sync &amp;&amp; options.timeout &gt; 0 ) {</span>
+<span class="cstat-no" title="statement not covered">        timeoutTimer = setTimeout(<span class="fstat-no" title="function not covered">function(){</span></span>
+<span class="cstat-no" title="statement not covered">            if (aborted) <span class="cstat-no" title="statement not covered">return</span></span>
+<span class="cstat-no" title="statement not covered">            aborted = true/</span>/IE9 may still call readystatechange
+<span class="cstat-no" title="statement not covered">            xhr.abort("timeout")</span>
+<span class="cstat-no" title="statement not covered">            var e = new Error("XMLHttpRequest timeout")</span>
+<span class="cstat-no" title="statement not covered">            e.code = "ETIMEDOUT"</span>
+<span class="cstat-no" title="statement not covered">            errorFunc(e)</span>
         }, options.timeout )
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if (xhr.setRequestHeader) {</span>
-<span class="cstat-no" title="statement not covered" >        for(key in headers){</span>
-<span class="cstat-no" title="statement not covered" >            if(headers.hasOwnProperty(key)){</span>
-<span class="cstat-no" title="statement not covered" >                xhr.setRequestHeader(key, headers[key])</span>
+<span class="cstat-no" title="statement not covered">    if (xhr.setRequestHeader) {</span>
+<span class="cstat-no" title="statement not covered">        for(key in headers){</span>
+<span class="cstat-no" title="statement not covered">            if(headers.hasOwnProperty(key)){</span>
+<span class="cstat-no" title="statement not covered">                xhr.setRequestHeader(key, headers[key])</span>
             }
         }
-    } else <span class="cstat-no" title="statement not covered" >if (options.headers &amp;&amp; !isEmpty(options.headers)) {</span>
-<span class="cstat-no" title="statement not covered" >        throw new Error("Headers cannot be set on an XDomainRequest object")</span>
+    } else <span class="cstat-no" title="statement not covered">if (options.headers &amp;&amp; !isEmpty(options.headers)) {</span>
+<span class="cstat-no" title="statement not covered">        throw new Error("Headers cannot be set on an XDomainRequest object")</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if ("responseType" in options) {</span>
-<span class="cstat-no" title="statement not covered" >        xhr.responseType = options.responseType</span>
+<span class="cstat-no" title="statement not covered">    if ("responseType" in options) {</span>
+<span class="cstat-no" title="statement not covered">        xhr.responseType = options.responseType</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    if ("beforeSend" in options &amp;&amp;</span>
+<span class="cstat-no" title="statement not covered">    if ("beforeSend" in options &amp;&amp;</span>
         typeof options.beforeSend === "function"
     ) {
-<span class="cstat-no" title="statement not covered" >        options.beforeSend(xhr)</span>
+<span class="cstat-no" title="statement not covered">        options.beforeSend(xhr)</span>
     }
 &nbsp;
     // Microsoft Edge browser sends "undefined" when send is called with undefined value.
     // XMLHttpRequest spec says to pass null as body to indicate no body
     // See https://github.com/naugtur/xhr/issues/100.
-<span class="cstat-no" title="statement not covered" >    xhr.send(body || null)</span>
+<span class="cstat-no" title="statement not covered">    xhr.send(body || null)</span>
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return xhr</span>
+<span class="cstat-no" title="statement not covered">    return xhr</span>
 &nbsp;
 &nbsp;
 }
 &nbsp;
-<span class="fstat-no" title="function not covered" >function getXml(xhr) {</span>
-<span class="cstat-no" title="statement not covered" >    if (xhr.responseType === "document") {</span>
-<span class="cstat-no" title="statement not covered" >        return xhr.responseXML</span>
+<span class="fstat-no" title="function not covered">function getXml(xhr) {</span>
+<span class="cstat-no" title="statement not covered">    if (xhr.responseType === "document") {</span>
+<span class="cstat-no" title="statement not covered">        return xhr.responseXML</span>
     }
-<span class="cstat-no" title="statement not covered" >    var firefoxBugTakenEffect = xhr.responseXML &amp;&amp; xhr.responseXML.documentElement.nodeName === "parsererror"</span>
-<span class="cstat-no" title="statement not covered" >    if (xhr.responseType === "" &amp;&amp; !firefoxBugTakenEffect) {</span>
-<span class="cstat-no" title="statement not covered" >        return xhr.responseXML</span>
+<span class="cstat-no" title="statement not covered">    var firefoxBugTakenEffect = xhr.responseXML &amp;&amp; xhr.responseXML.documentElement.nodeName === "parsererror"</span>
+<span class="cstat-no" title="statement not covered">    if (xhr.responseType === "" &amp;&amp; !firefoxBugTakenEffect) {</span>
+<span class="cstat-no" title="statement not covered">        return xhr.responseXML</span>
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return null</span>
+<span class="cstat-no" title="statement not covered">    return null</span>
 }
 &nbsp;
 function noop() {}
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Wed Apr 12 2017 00:20:39 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 21:36:22 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
